@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+// @ts-check
+///<reference path="../global.d.ts" />
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -35,3 +37,9 @@
 //     }
 //   }
 // }
+
+Cypress.Commands.add('getBySel', (selector, ...args) =>
+  cy.get(`[data-test=${selector}]`, ...args)
+)
+
+export {}
