@@ -1,6 +1,6 @@
 describe('Home Page', () => {
   it('displays both products on the home page', () => {
-    cy.visit('http://localhost:3005')
+    cy.visit('/')
     cy.get('[data-test="product-tag"]')
       .eq(0)
       //  Scopes all subsequent cy commands to within this element.
