@@ -38,8 +38,8 @@
 //   }
 // }
 
-Cypress.Commands.add('getBySel', (selector, ...args) =>
-  cy.get(`[data-test=${selector}]`, ...args)
-)
+Cypress.Commands.add('getBySel', (selector, ...args) => {
+  return cy.get(`[data-test=${selector}]`, ...args)
+})
 
 export {}
