@@ -6,3 +6,4 @@ describe('Shopping Cart', () => {
     cy.get('[aria-label="Cart items: 1"]').contains('1')
   })
 })
+export {}
